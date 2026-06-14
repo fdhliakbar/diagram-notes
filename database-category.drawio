@@ -1,0 +1,167 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0" pages="7">
+  <diagram name="search-oriented" id="yEOaMWFbf03xv8lfGT09">
+    <mxGraphModel dx="1192" dy="878" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ABtII5T620fGQM1QWLz_-17" parent="1" style="text;whiteSpace=wrap;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;id&lt;/th&gt;&lt;th&gt;username&lt;/th&gt;&lt;th&gt;bio&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;&lt;td&gt;fadhli&lt;/td&gt;&lt;td&gt;Backend developer &amp;amp; anime fan&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;&lt;td&gt;umu&lt;/td&gt;&lt;td&gt;Fullstack dev suka kopi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;&lt;td&gt;sena&lt;/td&gt;&lt;td&gt;Anime lover &amp;amp; gamer&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="100" width="280" x="200" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="ABtII5T620fGQM1QWLz_-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Contoh&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="210" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="ABtII5T620fGQM1QWLz_-21" edge="1" parent="1" source="ABtII5T620fGQM1QWLz_-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="499" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ABtII5T620fGQM1QWLz_-20" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Query SQL&lt;/h1&gt;&lt;p&gt;SELECT *&amp;nbsp;&lt;/p&gt;&lt;p&gt;FROM users&amp;nbsp;&lt;/p&gt;&lt;p&gt;WHERE bio LIKE &#39;%anime%&#39;;&lt;/p&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="220" x="200" y="439" as="geometry" />
+        </mxCell>
+        <mxCell id="ABtII5T620fGQM1QWLz_-22" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Result&lt;/h1&gt;&lt;p&gt;ID 1 = fadhli&lt;/p&gt;&lt;p&gt;ID 2 = sena&lt;/p&gt;" vertex="1">
+          <mxGeometry height="120" width="220" x="516" y="439" as="geometry" />
+        </mxCell>
+        <mxCell id="ABtII5T620fGQM1QWLz_-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="SQL cocok untuk data terstruktur dan transaksi, But pencarian teks panjang bisa lambat kalau datanya jutaan row" vertex="1">
+          <mxGeometry height="80" width="400" x="200" y="559" as="geometry" />
+        </mxCell>
+        <mxCell id="ABtII5T620fGQM1QWLz_-24" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Query DSL JSON&lt;/h1&gt;&lt;p&gt;kalau data yang sama di index ke Open Search, we can query with DSL&lt;/p&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="220" x="200" y="639" as="geometry" />
+        </mxCell>
+        <mxCell id="ABtII5T620fGQM1QWLz_-25" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Result&lt;/h1&gt;&lt;p&gt;fadhli = score relevansi: 0.95&lt;/p&gt;&lt;p&gt;sena = score relevansi = 0.89&lt;/p&gt;" vertex="1">
+          <mxGeometry height="120" width="220" x="516" y="639" as="geometry" />
+        </mxCell>
+        <mxCell id="ABtII5T620fGQM1QWLz_-26" edge="1" parent="1" source="ABtII5T620fGQM1QWLz_-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="699" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ABtII5T620fGQM1QWLz_-27" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="OpenSearch tidak hanya menemukan data, tapi juga memberi &lt;strong&gt;ranking relevansi&lt;/strong&gt; (dokumen paling cocok muncul dulu)." vertex="1">
+          <mxGeometry height="80" width="400" x="200" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="ABtII5T620fGQM1QWLz_-28" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="70" width="1290" x="200" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="ABtII5T620fGQM1QWLz_-5" edge="1" parent="ABtII5T620fGQM1QWLz_-28" source="ABtII5T620fGQM1QWLz_-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="ABtII5T620fGQM1QWLz_-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ABtII5T620fGQM1QWLz_-2" parent="ABtII5T620fGQM1QWLz_-28" style="rounded=0;whiteSpace=wrap;html=1;" value="User Input or POST" vertex="1">
+          <mxGeometry height="60" width="120" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="ABtII5T620fGQM1QWLz_-9" edge="1" parent="ABtII5T620fGQM1QWLz_-28" source="ABtII5T620fGQM1QWLz_-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ABtII5T620fGQM1QWLz_-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ABtII5T620fGQM1QWLz_-3" parent="ABtII5T620fGQM1QWLz_-28" style="rounded=0;whiteSpace=wrap;html=1;" value="Database OLAP" vertex="1">
+          <mxGeometry height="60" width="120" x="320" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="ABtII5T620fGQM1QWLz_-6" parent="ABtII5T620fGQM1QWLz_-28" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Simpan data utama ke DB" vertex="1">
+          <mxGeometry height="30" width="100" x="175" as="geometry" />
+        </mxCell>
+        <mxCell id="ABtII5T620fGQM1QWLz_-12" edge="1" parent="ABtII5T620fGQM1QWLz_-28" source="ABtII5T620fGQM1QWLz_-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="ABtII5T620fGQM1QWLz_-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ABtII5T620fGQM1QWLz_-8" parent="ABtII5T620fGQM1QWLz_-28" style="rounded=0;whiteSpace=wrap;html=1;" value="Database OLAP" vertex="1">
+          <mxGeometry height="60" width="120" x="640" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="ABtII5T620fGQM1QWLz_-10" parent="ABtII5T620fGQM1QWLz_-28" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="copy data for index search" vertex="1">
+          <mxGeometry height="30" width="100" x="500" as="geometry" />
+        </mxCell>
+        <mxCell id="ABtII5T620fGQM1QWLz_-14" edge="1" parent="ABtII5T620fGQM1QWLz_-28" source="ABtII5T620fGQM1QWLz_-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="ABtII5T620fGQM1QWLz_-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ABtII5T620fGQM1QWLz_-11" parent="ABtII5T620fGQM1QWLz_-28" style="rounded=0;whiteSpace=wrap;html=1;" value="Query DSL / API" vertex="1">
+          <mxGeometry height="60" width="120" x="930" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="ABtII5T620fGQM1QWLz_-13" parent="ABtII5T620fGQM1QWLz_-28" style="rounded=0;whiteSpace=wrap;html=1;" value="Search Result" vertex="1">
+          <mxGeometry height="60" width="120" x="1170" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="ABtII5T620fGQM1QWLz_-15" parent="ABtII5T620fGQM1QWLz_-28" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="find word or frasa" vertex="1">
+          <mxGeometry height="30" width="60" x="800" as="geometry" />
+        </mxCell>
+        <mxCell id="ABtII5T620fGQM1QWLz_-16" parent="ABtII5T620fGQM1QWLz_-28" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="relevant ranking result" vertex="1">
+          <mxGeometry height="30" width="60" x="1070" as="geometry" />
+        </mxCell>
+        <mxCell id="6K_GND4fgaDoXR7qqNTs-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#36393d;gradientColor=none;fillStyle=dots;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="" vertex="1">
+          <mxGeometry height="750" width="710" x="850" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="6K_GND4fgaDoXR7qqNTs-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;Alur Lengkap&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="200" x="1110" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="6K_GND4fgaDoXR7qqNTs-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcc99;strokeColor=#36393d;" value="Database OLTP&lt;br&gt;PostgreSQL" vertex="1">
+          <mxGeometry height="60" width="120" x="1000" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="6K_GND4fgaDoXR7qqNTs-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;" value="User" vertex="1">
+          <mxGeometry height="60" width="120" x="900" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="6K_GND4fgaDoXR7qqNTs-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;" value="&lt;div&gt;DB&lt;/div&gt;Open Search" vertex="1">
+          <mxGeometry height="60" width="120" x="1120" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="6K_GND4fgaDoXR7qqNTs-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;" value="User" vertex="1">
+          <mxGeometry height="60" width="120" x="1040" y="870" as="geometry" />
+        </mxCell>
+        <mxCell id="6K_GND4fgaDoXR7qqNTs-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;" value="User" vertex="1">
+          <mxGeometry height="60" width="120" x="1215" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="6K_GND4fgaDoXR7qqNTs-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;" value="Broker" vertex="1">
+          <mxGeometry height="60" width="120" x="1020" y="690" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="tmfoJjYhWR_ezIuRze93" name="OLTP">
+    <mxGraphModel dx="1863" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cpQCVn_kZIGAIy_mOwvv-1" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;What&#39;s OLTP?&lt;/h1&gt;&lt;div&gt;OLTP (Row-oriented / relational database management).&amp;nbsp;&lt;/div&gt;&lt;div&gt;Fungsi utama: Transaksi harian, data terstruktur (insert,update,delete)&lt;/div&gt;&lt;div&gt;Contoh: PostgreSQL, MySQL&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="440" x="-40" y="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="773est-IABiEc4s6L4eN" name="OLAP">
+    <mxGraphModel dx="1013" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="iGyxiVV5Pb6qOd8GQ_AA-1" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;What&#39;s OLAP&lt;/h1&gt;&lt;div&gt;OLAP (Column-oriented or analytics database)&lt;/div&gt;&lt;div&gt;Fungsi utama: Analitik skala besar, query agregasi yang cepat&lt;/div&gt;&lt;div&gt;Contoh: Clickhouse, DuckDB, Apache Druid&lt;/div&gt;&lt;div&gt;Pengunaan umum: Data warehouse, BI tools, real-time analytics&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="400" x="40" y="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="85wqOe3BrCOxyYcF_LxX" name="in-memory">
+    <mxGraphModel dx="1013" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="0vPQQtBsNIOg99lOJEeb-1" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;What&#39;s in memory or cache?&lt;/h1&gt;&lt;div&gt;....&lt;/div&gt;&lt;div&gt;Fungsi utama: akses super cepat karena disimpan di memory ram(temporary data)&lt;/div&gt;&lt;div&gt;Contoh: redis, valkey, memcache&lt;/div&gt;&lt;div&gt;Pengunaan Umum: Caching, session, store, real-time leadeboard&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="440" x="40" y="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="tYb_lW399v0Bp2JnO7xg" name="graph-database">
+    <mxGraphModel dx="1013" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="nAgf-sg2tOcgcmNvK751" name="time-series">
+    <mxGraphModel dx="1013" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="6w7VENCsRgo6jEdK8_KT" name="document-oriented-NoSQL">
+    <mxGraphModel dx="1013" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
